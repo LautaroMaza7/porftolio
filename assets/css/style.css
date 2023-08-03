@@ -450,8 +450,8 @@ section.section.hero .profile-area .inner-circle {
 
 .nav-close-btn:is(:hover, :focus-visible) { background-color: var(--white_a12); }
 
-.navbar-list { margin-block-end: 100%; }
-
+.navbar-list { margin-block-end: auto; }
+/* .navbar-list { margin-block-end: 100%; } */
 .navbar-link {
   font-weight: var(--fw-700);
   padding-block: 6px;
