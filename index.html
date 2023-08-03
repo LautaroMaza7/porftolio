@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lautaro - Desarrollador Full-Stack.</title>
+    <meta name="title" content="Lautaro - Desarrollador Full-Stack." />
+    <meta name="description" content="Mi poftfolio personal" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./fotoperfilDev.svg" type="image/svg+xml" />
+
+    <!-- MATERIAL ICONS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.jpg" />
+    <link rel="preload" as="image" href="./assets/images/Blog.svg" />
+  </head>
+
+  <body>
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo"> Lautaro </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo light"> Lautaro </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Acerca de</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Proyectos</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="wrapper">
+            <a href="mailto:mazalautaro.dev@gmail.com" class="contact-link"
+              >mazalautaro.dev@gmail.com</a
+            >
+
+            <a href="tel:+54-9-1122533111" class="contact-link"
+              >+54-9-1122533111</a
+            >
+          </div>
+
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://github.com/LautaroMaza7" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div
+          class="nav-open-btn hamburger-menu"
+          aria-label="open menu"
+          data-nav-toggler
+        >
+          <div class="bar"></div>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" aria-label="home">
+          <div class="container">
+            <div
+              class="profile-area"
+              data-reveal="top"
+              data-reveal-delay="0.5s"
+            >
+              <div class="outer-circle">
+                <span class="material-icons-sharp">design_services</span>
+                <span class="material-icons-sharp">dns</span>
+                <span class="material-icons-sharp">code</span>
+                <span class="material-icons-sharp"
+                  >integration_instructions</span
+                >
+              </div>
+              <div class="inner-circle">
+                <img src="./assets/images/fotoperfilDev.png" />
+              </div>
+            </div>
+            <div class="hero-content">
+              <h1
+                class="h1 hero-title"
+                data-reveal="top"
+                data-reveal-delay="0.5s"
+              >
+                Desarrollador Full-Stack
+              </h1>
+
+              <p
+                class="section-text"
+                data-reveal="top"
+                data-reveal-delay="0.75s"
+              >
+                Me llamo Lautaro Maza, soy desarrollador Full Stack
+                especializado en creación de sitios y aplicaciones web.
+                Apasionado por el diseño web y la excelente experiencia de
+                usuario. Siempre experimentando con nuevas tecnologías y
+                manteniendo proyectos propios y colaborativos.
+              </p>
+
+              <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+                <a href="#" class="btn btn-primary">Mi CV</a>
+
+                <a href="#" class="btn btn-secondary">Contactame</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="section about" aria-label="about">
+          <div class="container">
+            <div class="wrapper">
+              <div data-reveal="left">
+                <h2 class="h2 section-title">Que hago?</h2>
+
+                <p class="section-text">
+                  Cuento con 2 años y medio de experiencia en sistemas,
+                  especializado en la creación de sitios y aplicaciones web. Mi
+                  enfoque principal se encuentra en el desarrollo Frontend pero
+                  tambien trabajo constantemente con Backend para todo tipo de
+                  proyectos.
+                </p>
+              </div>
+
+              <ul class="progress-list" data-reveal="right">
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Frontend</p>
+
+                    <span class="span">100 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 100%; background-color: #c7b1dd"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Backend</p>
+
+                    <span class="span">70 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 70%; background-color: #b0d4c1"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>Mobile</p>
+
+                    <span class="span">60 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 60%; background-color: #8caeec"
+                    ></div>
+                  </div>
+                </li>
+
+                <li class="progress-item">
+                  <div class="label-wrapper">
+                    <p>SEO</p>
+
+                    <span class="span">90 %</span>
+                  </div>
+
+                  <div class="progress">
+                    <div
+                      class="progress-fill"
+                      style="width: 90%; background-color: #e3a6b6"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="grid-list">
+              <li data-reveal="bottom">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-1.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web design icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Frontend</h3>
+
+                  <p class="card-text">
+                    Utilizo JavaScript Nativo como librerías populares como
+                    jQuery, React, CSS, Bootstrap y Sass. Implemento diseños
+                    atractivos y funcionales, asegurándome de que el contenido
+                    se presente de manera clara y agradable visualmente.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.25s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-2.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="mobile design icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Mobile</h3>
+
+                  <p class="card-text">
+                    Durante mi experiencia profesional, utilizo tecnologías como
+                    React Native y frameworks móviles para crear interfaces
+                    responsivas y atractivas en dispositivos móviles. Mi enfoque
+                    es la usabilidad y la optimización de la experiencia del
+                    usuario.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.5s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-3.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web development icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">Backend</h3>
+
+                  <p class="card-text">
+                    Uso PHP para construir sistemas eficientes. Mi experiencia
+                    en el manejo de bases de datos, tanto en SQL (MySQL) como en
+                    NoSQL (MongoDB),me permitio diseñar y gestionar bases de
+                    datos escalables y seguras para diferentes tipos de
+                    sistemas.
+                  </p>
+                </div>
+              </li>
+
+              <li data-reveal="bottom" data-reveal-delay="0.75s">
+                <div class="about-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/icon-4.svg"
+                      width="52"
+                      height="52"
+                      loading="lazy"
+                      alt="web seo icon"
+                    />
+                  </div>
+
+                  <h3 class="h4 card-title">SEO</h3>
+
+                  <p class="card-text">
+                    Utilizo técnicas de SEO en mis proyectos actuales y previos,
+                    lo que ha llevado a una mayor visibilidad y tráfico orgánico
+                    para los sitios web que desarrollé. Me aseguro de que los
+                    sitios que construyo estén bien posicionados en los
+                    resultados de búsqueda.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #PROJECT
+      -->
+
+        <section class="section project" aria-labelledby="project-label">
+          <div class="container">
+            <div class="title-wrapper" data-reveal="top">
+              <div>
+                <h2 class="h2 section-title" id="project-label">
+                  Últimos proyectos
+                </h2>
+
+                <p class="section-text">
+                  Echa un vistazo a algunos de mis últimos proyectos con ideas
+                  creativas.
+                </p>
+              </div>
+
+              <a href="#" class="btn btn-secondary">See All Projects</a>
+            </div>
+
+            <ul class="grid-list">
+              <li>
+                <div
+                  class="project-card project-card-1"
+                  style="background-color: #f8f5fb"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #a07cc5">Full-Stack</p>
+
+                    <h3 class="h3 card-title">Dic Tecnology Solutions</h3>
+
+                    <p class="card-text">Empresa de Servicios de Domotica</p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #a07cc5">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/proyect1.png"
+                      width="650"
+                      height="370"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-2"
+                  style="background-color: #f1f5fd"
+                >
+                  <div class="card-content" data-reveal="right">
+                    <p class="card-tag" style="color: #a07cc5">Full-Stack</p>
+
+                    <h3 class="h3 card-title">Blog App</h3>
+
+                    <p class="card-text">
+                      Sistema de Blog para cualquier tipo de Empresas
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #3f78e0">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="left">
+                    <img
+                      src="./assets/images/proyect6.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-3"
+                  style="background-color: #f5faf7"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #7cb798">Frontend</p>
+
+                    <h3 class="h3 card-title">Dic Security Solutions.</h3>
+
+                    <p class="card-text">Empresa de Servicios de Seguridad</p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #7cb798">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/proyect8.png"
+                      width="600"
+                      height="367"
+                      loading="lazy"
+                      alt="Web Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-4"
+                  style="background-color: #fcf4f6"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #d16b86">Backend</p>
+
+                    <h3 class="h3 card-title">Panel Admin - Dashboard</h3>
+
+                    <p class="card-text">
+                      Panel Administrativo para una Tienda Ecommerce
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/proyect7.png"
+                      width="620"
+                      height="370"
+                      loading="lazy"
+                      alt="Mobile Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-4"
+                  style="background-color: #fcf4f6"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #d16b86">Backend</p>
+
+                    <h3 class="h3 card-title">Panel Admin - Dashboard</h3>
+
+                    <p class="card-text">
+                      Panel Administrativo en conjunto con el sistema del Blog
+                    </p>
+
+                    <!-- <a href="#" class="btn-text" style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/proyect10.png"
+                      width="620"
+                      height="370"
+                      loading="lazy"
+                      alt="Mobile Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+
+              <li>
+                <div
+                  class="project-card project-card-4"
+                  style="background-color: #f5faf7"
+                >
+                  <div class="card-content" data-reveal="left">
+                    <p class="card-tag" style="color: #3f78e0">Mobile</p>
+
+                    <h3 class="h3 card-title">App de Notas</h3>
+
+                    <!-- <a href="#" class="btn-text" style="color: #d16b86">
+                      <span class="span">See Project</span>
+
+                      <ion-icon
+                        name="arrow-forward-outline"
+                        aria-hidden="true"
+                      ></ion-icon>
+                    </a> -->
+                  </div>
+
+                  <figure class="card-banner" data-reveal="right">
+                    <img
+                      src="./assets/images/proyectt6.png"
+                      width="620"
+                      height="370"
+                      loading="lazy"
+                      alt="Mobile Design"
+                      class="w-100"
+                    />
+                  </figure>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="section contact" aria-label="contact">
+          <div class="container">
+            <div class="contact-card">
+              <div class="contact-content" data-reveal="left">
+                <div class="card-icon">
+                  <img
+                    src="./assets/images/icon-5.svg"
+                    width="44"
+                    height="44"
+                    loading="lazy"
+                    alt="envelop icon"
+                  />
+                </div>
+
+                <h2 class="h2 section-title">
+                  Si te interesa mi contenido Trabajemos juntos!
+                </h2>
+
+                <p class="section-text">
+                  Aporto soluciones para facilitar las necesidades de mis
+                  clientes. Comuníquese conmigo desde este formulario de
+                  contacto y Me pondré en contacto con usted en breve.
+                </p>
+              </div>
+
+              <form action="" class="contact-form" data-reveal="right">
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Name *"
+                    required
+                    class="input-field"
+                  />
+
+                  <input
+                    type="email"
+                    name="email_address"
+                    placeholder="Email *"
+                    required
+                    class="input-field"
+                  />
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message *"
+                  required
+                  class="input-field"
+                ></textarea>
+
+                <button type="submit" class="btn btn-secondary">
+                  Send message
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          © 2023 Lautaro Maza Developer. All rights reserved.
+        </p>
+
+        <ul class="social-list">
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/LautaroMaza7" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
